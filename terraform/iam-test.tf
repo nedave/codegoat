@@ -10,14 +10,14 @@ resource "aws_iam_policy" "policy_resource_fail" {
         Action = [
           "ec2:*",
         ]
-        Effect   = "Allow"
+        Effect   = "Deny"
         Resource = "arn:aws:ec2:*"
       },
       {
         Action = [
           "s3:*",
         ]
-        Effect   = "Deny"
+        Effect   = "Allow"
         Resource = "arn:aws:s3:::some_bucket"
       }
     ]
