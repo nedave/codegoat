@@ -17,7 +17,7 @@ resource "aws_iam_policy" "policy_resource_fail" {
         Action = [
           "s3:*",
         ]
-        Effect   = "Allow"
+        Effect   = "Deny"
         Resource = "arn:aws:s3:::some_bucket"
       }
     ]
